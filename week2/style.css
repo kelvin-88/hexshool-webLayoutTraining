@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* custom */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.medium{
+  font-weight: 500;
+}
+.bold{
+  font-weight: 700;
+}
+.black{
+  font-weight: 900;
+}
+
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.banner {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png") no-repeat;
+  /* width: 1920px; */
+  height: 958px;
+}
+
+.banner-inner {
+  padding-top: 356px;
+  padding-left: 806px;
+  color: white;
+}
+
+.banner .p1{
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.banner .p2{
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 48px;
+}
+
+.banner h1{
+  font-size: 80px;
+  line-height: 94px;
+}
+
+.banner img {
+  margin-right: 16px;
+}
+
+
+h2 {
+  margin-top: 64px;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about {
+  text-align: center;
+}
+
+.about-inner {
+  /* width: 384px;
+  margin: 0 auto; */
+}
+
+.about img {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.about p {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.about .line {
+  width: 384px;
+
+  height: 1px;
+  border-width: 0px;
+  color: black;
+  background-color: black;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.dot {
+  
+  height: 22px;
+  width: 22px;
+  background-color:#891818;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.about li {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+
+.brand {
+  padding-top: 64px;
+  padding-bottom: 160px;
+
+  background: black;
+  color:white;
+  text-align: center;
+}
+
+.brand h2 {
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.brand h3 {
+  font-size: 24px;
+  line-height: 42px;
+  margin-bottom: 32px;
+}
+
+.brand h4 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 68px;
+}
+
+.brand .img1 {
+  margin-bottom: 40px;
+}
+
+.brand .img2 {
+  margin-right: 24px;
+}
+
+.other-works {
+  text-align: center;
+  width: 1250px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+
+.other-works h2 {
+  font-size: 64px;
+  line-height: 75px;
+  margin-bottom: 24px;
+}
+
+.other-works h3 {
+  font-size: 20px;
+  line-height: 30px;  
+}
+
+.other-works .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.other-works .img {
+  margin: 0 12px;
+  margin-top: 56px;
+}
+
+.other-works img {
+  display: block;
+}
+
+.other-works h4 {
+  font-size: 20px;
+  line-height: 42px;
+  margin-top: 16px;
+}
+
+.contact {
+  text-align: center;
+  background: black;
+  color: white;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.contact h2 {
+  margin-top: 16px;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.contact h3 {
+  margin-top: 16px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact a {
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 128px;
+}
