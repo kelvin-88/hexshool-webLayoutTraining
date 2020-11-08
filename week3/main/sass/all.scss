@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom */
+
+*,*:before, *:after {	
+  box-sizing: border-box;
+}	
+	
+img {	
+  max-width: 100%;	
+  height: auto;	
+}	
+
+// .container {
+//   //max-width: 768px;
+//   max-width: 1920px;
+//   margin: 0 auto;
+// }
+
+/* pc */
+.wrap {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.header {
+  background: #AA0601;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 88px;
+  font-size: 20px;
+
+  .logo {
+    margin: 30px 0;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;  
+  }
+
+  li {
+    //margin-right: 20px;
+    margin-right: 64px;
+  }
+
+  li:last-child {
+     margin-right: 0px;
+  }
+}
+
+
+
+.content {
+  height: 200px;
+  border: 1px solid black;
+}
+
+.footer {
+  //padding: 40px;
+  background: #AA0601;
+  color: white;
+  font-size: 16px;
+
+  img {
+    height: 48px;
+  }
+
+ 
+  .footer-bar{
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+      display: flex;
+    }
+
+    li {
+      //margin-right: 40px;
+      margin-right: 48px;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    a{
+      margin-right: 32px;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer-icon {
+    /* width: 24px; */
+    display: flex;   
+  }
+
+  .footer-line-block {
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid white;
+    .footer-line {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      font-size: 36px;
+
+      img {
+        margin-right: 12px;
+      }   
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        color: #D3D3D3;
+      }
+    }
+  }
+
+  .legal-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 28px;
+
+    .legal-line {
+      display: flex;
+      align-items: center;
+
+      .copyright {
+        font-size: 16px;
+      }
+
+
+      img {
+        margin-right: 38px;
+      }
+    }
+
+    .legal-words {
+      font-size: 14px;
+      p {
+        margin-left: 62px;
+      }
+    }
+  }
+
+  
+}
+
+/* 768~992px pad */
+@media (max-width:992px) {
+  .header {
+    padding: 0 20px;
+    li {    
+      margin-right: 40px;
+    }
+  }
+
+  .footer {
+    padding: 0 20px;
+    .footer-bar{  
+      a{
+        margin-right: 24px;
+      }
+    }
+
+    .footer-line-block {
+      .footer-line {
+        font-size: 24px;
+      }
+    }
+
+    img {
+      height: 24px;
+    }
+
+    .legal-block img {
+      display: none;
+    }
+
+  }
+}
+
+//@media (max-width:768px) { 
+/* 767px handheld below 320 375 414px */
+@media (max-width:767px) { 
+  .header {
+    display: flex;
+    flex-direction: column;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .footer {
+    .footer-bar{   
+        li {
+          margin-right: 20px;
+        }
+      } 
+    }
+}
+
+@media (max-width:576px) { 
+  .footer {
+    .footer-bar{   
+      ul {
+        display: none;
+      }
+    } 
+
+    .footer-line-block {
+      .footer-line {
+        font-size: 20px;
+      }
+    }
+    
+  }
+}
