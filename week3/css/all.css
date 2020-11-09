@@ -137,16 +137,17 @@ img {
     .content .shop ul {
       margin-top: 23px;
       border: 1px solid #00000020;
-      padding: 16px 24px 0 24px; }
+      padding: 16px 24px 8px 24px; }
     .content .shop ul li {
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       display: flex;
+      align-items: stretch;
       color: #212529;
       align-self: start; }
       .content .shop ul li p {
         font-size: 20px;
-        line-height: 30px;
-        margin-left: 12px; }
+        margin-left: 12px;
+        line-height: 30px; }
       .content .shop ul li img {
         margin-top: 5px; }
     .content .shop .detail {
@@ -230,11 +231,11 @@ img {
     width: 330px; }
     .content .shop h3 {
       font-size: 16px; }
-    .content .shop ul li {
-      margin-bottom: 8px; }
-      .content .shop ul li p {
-        font-size: 14px;
-        vertical-align: bottom; }
+    .content .shop ul li p {
+      font-size: 14px;
+      line-height: 21px; }
+    .content .shop ul li img {
+      margin-top: 0px; }
     .content .shop .detail {
       padding: 16px 0;
       font-size: 14px; }
