@@ -198,19 +198,20 @@ img {
       margin-top: 23px;
       // padding-top: 16px;
       border: 1px solid #00000020;
-      padding: 16px 24px 0 24px;
+      padding: 16px 24px 8px 24px;
     }
 
     ul li{
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       display: flex;
+      align-items: stretch;
       color: #212529;
       align-self: start;
       //align-items: flex-end;
       p {
         font-size: 20px;
-        line-height: 30px;
         margin-left: 12px;
+        line-height: 30px;
       }
 
       img {
@@ -363,10 +364,14 @@ img {
       }
 
       ul li{
-        margin-bottom: 8px;
+        //margin-bottom: 2px;
         p {
           font-size: 14px;
-          vertical-align: bottom;          
+          line-height: 21px;        
+        }
+
+        img {
+          margin-top: 0px;
         }
       }
 
