@@ -75,17 +75,17 @@ img {
 }
 
 .wrap {  
-  max-width: 1170px;
+  //max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-.wrap-content {  
-  max-width: 1173px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
+// .wrap-content {  
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 0 30px;
+// }
 
 .header {  
   background: #AA0601;
@@ -118,7 +118,7 @@ img {
 
 
 .content {
-  height: 2215px;
+  min-height: 2215px;
 
   .banner {
     background: url("https://hexschool.github.io/webLayoutTraining1st/week3/qa.png") no-repeat center;
@@ -180,8 +180,8 @@ img {
     margin-bottom: 32px;
     img {
       display: block;
-      width: 350px;    
-      height: 224px;
+      // width: 350px;    
+      // height: 224px;
     }
 
     h3 {
@@ -196,14 +196,16 @@ img {
 
     ul { 
       margin-top: 23px;
-      padding-top: 16px;
+      // padding-top: 16px;
       border: 1px solid #00000020;
+      padding: 16px 24px 0 24px;
     }
 
     ul li{
       margin-bottom: 16px;
       display: flex;
       color: #212529;
+      align-self: start;
       //align-items: flex-end;
       p {
         font-size: 20px;
@@ -213,7 +215,6 @@ img {
 
       img {
         margin-top: 5px;
-        margin-left: 24px;
       }
     }
 
@@ -226,9 +227,9 @@ img {
     }
   }
 
-  .shop:nth-child(3n) {
-    margin-right: 0px;
-  }
+  // .shop:nth-child(3n) {
+  //   margin-right: 0px;
+  // }
 
   .shop-content {
     margin-top: 12px;
@@ -355,11 +356,27 @@ img {
 
   .content {
     .shop {
-      img {
-        width: 330px; 
+      width: 330px; 
+
+       h3 {
+        font-size: 16px;   
+      }
+
+      ul li{
+        margin-bottom: 8px;
+        p {
+          font-size: 14px;
+          vertical-align: bottom;          
+        }
+      }
+
+      .detail {
+        padding: 16px 0;
+        font-size: 14px;
       }
     }
   }
+
   .footer {
     padding: 0 20px;
     .footer-bar{  
@@ -386,33 +403,31 @@ img {
   }
 }
 
-@media (max-width:1185px) { 
-  // 1110 + 60 = 1170
-  .content {
-    .shop:nth-child(3n) {
-      margin-right: 30px;
-    }
+// @media (max-width:1185px) { 
+//   // 1110 + 60 = 1170
+//   .content {
+//     .shop:nth-child(3n) {
+//       margin-right: 30px;
+//     }
 
-    .shop:nth-child(2n) {
-      margin-right: 0px;
-    }
-  }
-}
+//     .shop:nth-child(2n) {
+//       margin-right: 0px;
+//     }
+//   }
+// }
 
-@media (max-width:770px) { 
-  // 1110 + 60 = 1170
-  .content {
-    .shop {
-      margin-right: 0px;
-    }
-  }
-}
+// @media (max-width:770px) { 
+//   // 1110 + 60 = 1170
+//   .content {
+//     .shop {
+//       margin-right: 0px;
+//     }
+//   }
+// }
 
 //@media (max-width:768px) { 
 /* 767px handheld below 320 375 414px */
-
 @media (max-width:767px) { 
- 
   .footer {
     .footer-bar{   
         li {
@@ -447,6 +462,19 @@ img {
       padding: 8px;      
     }
   }
+
+  .wrap-content {
+    padding: 0 15px;
+  }
+
+  .content {
+    .shop {
+      width: 100vw;
+      margin-right: 0; 
+      margin-bottom: 16px;
+    }
+  }
+
   .footer {
     .footer-bar {
       padding-top: 23px;

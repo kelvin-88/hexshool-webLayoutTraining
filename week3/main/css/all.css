@@ -66,12 +66,7 @@ img {
   font-weight: 700; }
 
 .wrap {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 30px; }
-
-.wrap-content {
-  max-width: 1173px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px; }
 
@@ -94,7 +89,7 @@ img {
     margin-right: 0px; }
 
 .content {
-  height: 2215px; }
+  min-height: 2215px; }
   .content .banner {
     background: url("https://hexschool.github.io/webLayoutTraining1st/week3/qa.png") no-repeat center;
     max-width: 1920;
@@ -132,9 +127,7 @@ img {
     margin-right: 30px;
     margin-bottom: 32px; }
     .content .shop img {
-      display: block;
-      width: 350px;
-      height: 224px; }
+      display: block; }
     .content .shop h3 {
       font-size: 24px;
       margin-left: 24px; }
@@ -143,27 +136,25 @@ img {
       height: 21px; }
     .content .shop ul {
       margin-top: 23px;
-      padding-top: 16px;
-      border: 1px solid #00000020; }
+      border: 1px solid #00000020;
+      padding: 16px 24px 0 24px; }
     .content .shop ul li {
       margin-bottom: 16px;
       display: flex;
-      color: #212529; }
+      color: #212529;
+      align-self: start; }
       .content .shop ul li p {
         font-size: 20px;
         line-height: 30px;
         margin-left: 12px; }
       .content .shop ul li img {
-        margin-top: 5px;
-        margin-left: 24px; }
+        margin-top: 5px; }
     .content .shop .detail {
       text-align: center;
       background-color: black;
       color: white;
       padding: 20px 0;
       font-size: 19px; }
-  .content .shop:nth-child(3n) {
-    margin-right: 0px; }
   .content .shop-content {
     margin-top: 12px;
     font-size: 24px; }
@@ -235,8 +226,18 @@ img {
     padding: 0 30px; }
     .header li {
       margin-right: 40px; }
-  .content .shop img {
+  .content .shop {
     width: 330px; }
+    .content .shop h3 {
+      font-size: 16px; }
+    .content .shop ul li {
+      margin-bottom: 8px; }
+      .content .shop ul li p {
+        font-size: 14px;
+        vertical-align: bottom; }
+    .content .shop .detail {
+      padding: 16px 0;
+      font-size: 14px; }
   .footer {
     padding: 0 20px; }
     .footer .footer-bar a {
@@ -248,16 +249,6 @@ img {
       height: 24px; }
     .footer .legal-block img {
       display: none; } }
-
-@media (max-width: 1185px) {
-  .content .shop:nth-child(3n) {
-    margin-right: 30px; }
-  .content .shop:nth-child(2n) {
-    margin-right: 0px; } }
-
-@media (max-width: 770px) {
-  .content .shop {
-    margin-right: 0px; } }
 
 /* 767px handheld below 320 375 414px */
 @media (max-width: 767px) {
@@ -282,6 +273,12 @@ img {
       text-align: center;
       border: 1px solid white;
       padding: 8px; }
+  .wrap-content {
+    padding: 0 15px; }
+  .content .shop {
+    width: 100vw;
+    margin-right: 0;
+    margin-bottom: 16px; }
   .footer .footer-bar {
     padding-top: 23px; }
   .footer .footer-bar-menu ul {
