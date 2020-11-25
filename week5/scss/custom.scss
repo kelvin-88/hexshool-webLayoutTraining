@@ -1,0 +1,31 @@
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+
+$primary:       #2A8356 !default;
+$border-radius:               .125rem !default; // 2px
+
+@import "bootstrap/bootstrap";
+
+.form-control {
+  background: #EDF4EE;
+  padding: 1rem;
+}
+
+.modal-header, .modal-body {
+  padding: 2rem; // 32px
+}
+
+.btn {
+  padding: .5rem 2rem; // 8px, 32px
+}
+
+.btn-border {
+  border: 1px solid #CDDDCD;
+}
+
+.disabled-text {
+  color: #CDDDCD;
+}
+
+.btn-text {
+  color: #2A8356;
+}
