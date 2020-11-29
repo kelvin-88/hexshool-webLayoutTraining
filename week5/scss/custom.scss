@@ -29,6 +29,9 @@ $text-muted:                  #00000062 !default;
   color: $primary;
 }
 
+.container {
+  min-width: 1280px;
+}
 
 .form-control {
   background: #EDF4EE;
