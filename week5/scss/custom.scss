@@ -25,6 +25,10 @@ $text-muted:                  #00000062 !default;
   font-family: 'Roboto Mono', monospace;
 }
 
+.primary-color {
+  color: $primary;
+}
+
 
 .form-control {
   background: #EDF4EE;
@@ -97,11 +101,17 @@ $text-muted:                  #00000062 !default;
   }
 }
 
-.assignment-content {
+.content {
+  padding: 32px;
   // flex-grow: 2;
   // max-width: 984px;
   // padding: 2rem;
 
+  td {
+    // background-color: blue;
+    padding: 1rem 0;
+    // border-bottom: 1px solid #000;
+  }
 
 
   .menu-top-left {
@@ -139,14 +149,12 @@ $text-muted:                  #00000062 !default;
   // color:red;
 }
 
-.message-detail {
-  .icon {
-    display: block;
-    width: 40px;
-    height: 40px;
-    // background: transparent url('https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg') no-repeat center;
-    // object-fit: cover
-  }
+.avatar-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  // background: transparent url('https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg') no-repeat center;
+  // object-fit: cover
 }
 
 .message-attachment {
@@ -158,6 +166,36 @@ $text-muted:                  #00000062 !default;
   height: 319px;
 }
 
+.admin-header {
+  border-bottom: 1px solid #121212;
+}
+
+.admin-icon {
+  font-size: 12px;
+}
+
+.admin-icon-edit {
+  color:black;
+}
+
+.page-link {
+  color: #2A8356;
+  border: 1px solid #2A8356;
+}
+
+.page-item {
+  .material-icons {
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+.page-item-selected {
+  background: #2A8356;
+  color: white;
+}
+
 .col-3, .col-9, .col-4, .col-8 {
   // outline: 1px solid green;
 }
+
