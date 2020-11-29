@@ -1,13 +1,46 @@
 // https://getbootstrap.com/docs/4.0/getting-started/theming/
 
 $primary:       #2A8356 !default;
+$secondary:     #CDDDCD !default;
 $border-radius:               .125rem !default; // 2px
+$paragraph-margin-bottom: 0;
+$text-muted:                  #00000062 !default;
 
 @import "bootstrap/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// font
+.lato-regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.lato-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.roboto-mono-regular {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.primary-color {
+  color: $primary;
+}
+
+.container {
+  min-width: 1280px;
+}
 
 .form-control {
   background: #EDF4EE;
   padding: 1rem;
+}
+
+.form-control-select {
+    height: 50px;
+    padding: .8rem;
 }
 
 .modal-header, .modal-body {
@@ -19,13 +52,153 @@ $border-radius:               .125rem !default; // 2px
 }
 
 .btn-border {
-  border: 1px solid #CDDDCD;
+  border: 1px solid $secondary;
 }
 
 .disabled-text {
-  color: #CDDDCD;
+  color: $secondary;
 }
 
 .btn-text {
   color: #2A8356;
 }
+
+.modal-header {
+  border-bottom: 0;
+  padding-bottom: .5rem;
+}
+
+.modal-body {
+  padding-top: 0;
+}
+
+.session {
+  border-bottom: 1px solid $secondary;
+  padding-top: 24.5px;
+  padding-bottom: 8px;
+}
+
+.small-font {
+  font-size: 14px;
+}
+
+.menu-left {
+  // max-width: 296px;
+  background-color: #EDF4EE;
+  padding: 2rem;
+
+  ul {
+    padding-left: 0;
+  }
+  ul li {
+    display: flex;
+    padding: 12px 0;
+  }
+
+  .material-icons {
+    margin-right: 2rem;
+  }
+
+  .icon-highlight {
+    color: #2A8356;
+  }
+}
+
+.content {
+  padding: 32px;
+  // flex-grow: 2;
+  // max-width: 984px;
+  // padding: 2rem;
+
+  td {
+    // background-color: blue;
+    padding: 1rem 0;
+    // border-bottom: 1px solid #000;
+  }
+
+
+  .menu-top-left {
+    display: flex;
+    align-items: baseline;
+  }
+} 
+
+.selection {
+  border: 0;
+  background-color: transparent;
+}
+
+.message {
+  padding: .75rem;
+  border: 1px solid #CDDDCD;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.message-selected {
+  background-color: #EDF4EE;
+  //border: 1px solid #CDDDCD;
+}
+
+.message-text {
+  font-size: 0.75em;
+}
+
+.message-content {
+  font-size: 0.875em;
+}
+
+.message-hightlight {
+  color: #2A8356;
+  // color:red;
+}
+
+.avatar-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  // background: transparent url('https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg') no-repeat center;
+  // object-fit: cover
+}
+
+.message-attachment {
+  background-color: #EDF4EE;
+  color: black;
+}
+
+.message-body {
+  height: 319px;
+}
+
+.admin-header {
+  border-bottom: 1px solid #121212;
+}
+
+.admin-icon {
+  font-size: 12px;
+}
+
+.admin-icon-edit {
+  color:black;
+}
+
+.page-link {
+  color: #2A8356;
+  border: 1px solid #2A8356;
+}
+
+.page-item {
+  .material-icons {
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+.page-item-selected {
+  background: #2A8356;
+  color: white;
+}
+
+.col-3, .col-9, .col-4, .col-8 {
+  // outline: 1px solid green;
+}
+

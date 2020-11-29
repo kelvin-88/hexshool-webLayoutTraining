@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第五週 - 後台版型 (Assignment)</title>
+
+  <link rel="stylesheet" href="css/custom.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-3 menu-left d-flex flex-column">
+        <img class="mb-3 align-self-start" src="https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg "
+          alt="">
+        <ul class="lato-bold mb-auto">
+          <li>
+            <span class="material-icons">
+              analytics
+            </span>
+            Dashboard
+          </li>
+          <li>
+            <span class="material-icons">
+              question_answer
+            </span>
+            Question
+          </li>
+          <li>
+            <span class="material-icons icon-highlight">
+              assignment
+            </span>
+            <span class="icon-highlight">Assignment</span>
+          </li>
+          <li>
+            <span class="material-icons">
+              video_library
+            </span>
+            Course
+          </li>
+          <li>
+            <span class="material-icons">
+              supervisor_account
+            </span>
+            <span>Admin</span>
+          </li>
+          <li>
+            <span class="material-icons">
+              settings
+            </span>
+            Settings
+          </li>
+        </ul>
+
+        <div class="d-flex">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg" alt=""
+            class="avatar-icon rounded-circle mr-2">
+          <div class="d-flex flex-column">
+            <p class="lato-bold">Andy Chen</p>
+            <p class="message-text lato-regular">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content col-9">
+
+        <div class="menu-top d-flex align-items-baseline justify-content-between">
+          <div class="menu-top-left">
+            <div class="lato-bold h4">Assignment</div>
+            <div class="ml-4">
+              <select class="selection lato-bold align-baseline" id="exampleFormControlSelect1">
+                <option selected>All Courses </option>
+                <option>HTML & CSS</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="menu-top-right">
+            <span class="material-icons">
+              search
+            </span>
+            <span class="material-icons ml-3">
+              notifications_active
+            </span>
+          </div>
+
+
+        </div>
+
+        <div class="menu-top d-flex align-items-baseline justify-content-between mt-5">
+
+          <div class="menu-top-left mb-2">
+            <select class="selection lato-bold align-baseline" id="exampleFormControlSelect1">
+              <option selected>All (4)</option>
+              <option>All Com</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="menu-top-right">
+            <p class="message-text text-muted">2 comments</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <ul class="messages col-4" style="list-style-type:none;">
+            <li class="message message-selected pl-2">
+              <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
+                <p>Chapter Assignment 2</p>
+                <p>4 hrs ago</p>
+              </div>
+              <div class="message-row1 d-flex align-items-baseline justify-content-between">
+                <p class="lato-bold">Please check this file…</p>
+                <p class="message-text text-muted">Emily Wang</p>
+              </div>
+            </li>
+
+            <li class="message pl-2">
+              <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
+                <p>Chapter Assignment 1</p>
+                <p>12 hrs ago</p>
+              </div>
+              <div class="message-row1 d-flex align-items-baseline justify-content-between">
+                <p class="lato-bold">My Homework</p>
+                <p class="message-text text-muted">David Xu</p>
+              </div>
+            </li>
+
+            <li class="message pl-2">
+              <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
+                <p>Final Assignment</p>
+                <p>18 hrs ago</p>
+              </div>
+              <div class="message-row1 d-flex align-items-baseline justify-content-between">
+                <p class="lato-bold">Have a problem with this…</p>
+                <p class="message-text text-muted">Tony Wei</p>
+              </div>
+            </li>
+
+            <li class="message pl-2">
+              <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
+                <p>Final Assignment</p>
+                <p>19 hrs ago</p>
+              </div>
+              <div class="message-row1 d-flex align-items-baseline justify-content-between">
+                <p class="lato-bold">Did I do it right?</p>
+                <p class="message-text text-muted">Christina Lin</p>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="message-detail col-8 d-flex flex-column">
+            <div class="message message-selected p-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <p class="message-text pb-1">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="lato-bold">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-icons ml-3">
+                  more_vert
+                </span>
+              </div>
+            </div>
+
+            <div class="message-detail d-flex pt-3 pl-3 pr-4 border">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg" alt=""
+                class="avatar-icon rounded-circle mr-2">
+              <div class="message-block d-flex flex-column border-bottom pb-3">
+                <p class="lato-bold">Emily Wang</p>
+                <p class="lato-regular message-text text-muted">10:38 AM (4 hours ago)</p>
+                <p class="lato-regular message-content mt-3">Hi Teacher, the attached file is my homework of chapter 2.
+                  And here comes a question: Why in the following code the height of the <span
+                    class="message-hightlight ml-1">div</span> is bigger than
+                  the height
+                  of the <span class="message-hightlight ml-1">img</span>? There is a gap below the image, but it
+                  doesn’t
+                  seems to be a padding/margin. <br>What is
+                  the
+                  gap or extra space below image?</p>
+
+                <a href="#" class="message-attachment d-flex align-self-start p-2 mt-3">
+                  <span class="material-icons">
+                    attach_file
+                  </span>
+                  <p class="lato-bold">HW-2-David.zip</p>
+                  <div class="div"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="message-body d-flex flex-column border">
+              <ul class="d-flex message-selected p-3 border-bottom" style="list-style-type:none;">
+                <li class="mr-4">
+                  <select class="selection lato-bold align-baseline" id="exampleFormControlSelect1">
+                    <option selected>Body Text</option>
+                    <option>Aria</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_bold
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_italic
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_list_bulleted
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_list_numbered
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    insert_photo
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    insert_link
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    code
+                  </span>
+                </li>
+              </ul>
+
+              <p class="p-3 lato-regular flex-grow-1 text-muted">Reply an answer…</p>
+              <div class="align-self-end mr-4 mb-4">
+                <a href="#" class="btn btn-outline-primary">Cancel</a>
+                <a href="#" class="btn btn-primary">Reply</a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
