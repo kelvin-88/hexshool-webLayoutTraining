@@ -60,19 +60,13 @@
 
       <div class="assignment-content col-10 p-5">
 
-        <div class="row">
-          <div class="col-4" style="background-color: red;">col-4</div>
-          <div class="col-8" style="background-color: orange;">col-8</div>
-        </div>
-
         <div class="menu-top d-flex align-items-baseline justify-content-between">
-
           <div class="menu-top-left">
             <div class="lato-bold h4">Assignment</div>
             <div class="ml-4">
-              <select class="select-course lato-bold align-baseline" id="exampleFormControlSelect1">
+              <select class="selection lato-bold align-baseline" id="exampleFormControlSelect1">
                 <option selected>All Courses </option>
-                <option>All Courses A</option>
+                <option>HTML & CSS</option>
                 <option>3</option>
                 <option>4</option>
                 <option>5</option>
@@ -94,73 +88,71 @@
 
         <div class="menu-top d-flex align-items-baseline justify-content-between mt-5">
 
-          <div class="menu-top-left">
-            <div>
-              <select class="select-course lato-bold align-baseline" id="exampleFormControlSelect1">
-                <option selected>All (4)</option>
-                <option>All Com</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
+          <div class="menu-top-left mb-2">
+            <select class="selection lato-bold align-baseline" id="exampleFormControlSelect1">
+              <option selected>All (4)</option>
+              <option>All Com</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
           </div>
 
           <div class="menu-top-right">
-            <p>2 comments</p>
+            <p class="message-text text-muted">2 comments</p>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-4">
-            <div class="message message-selected pl-2">
+          <ul class="messages col-4" style="list-style-type:none;">
+            <li class="message message-selected pl-2">
               <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
                 <p>Chapter Assignment 2</p>
                 <p>4 hrs ago</p>
               </div>
               <div class="message-row1 d-flex align-items-baseline justify-content-between">
                 <p class="lato-bold">Please check this file…</p>
-                <p class="message-text">Emily Wang</p>
+                <p class="message-text text-muted">Emily Wang</p>
               </div>
-            </div>
+            </li>
 
-            <div class="message pl-2">
+            <li class="message pl-2">
               <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
                 <p>Chapter Assignment 1</p>
                 <p>12 hrs ago</p>
               </div>
               <div class="message-row1 d-flex align-items-baseline justify-content-between">
                 <p class="lato-bold">My Homework</p>
-                <p class="message-text">David Xu</p>
+                <p class="message-text text-muted">David Xu</p>
               </div>
-            </div>
+            </li>
 
-            <div class="message pl-2">
+            <li class="message pl-2">
               <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
                 <p>Final Assignment</p>
                 <p>18 hrs ago</p>
               </div>
               <div class="message-row1 d-flex align-items-baseline justify-content-between">
                 <p class="lato-bold">Have a problem with this…</p>
-                <p class="message-text">Tony Wei</p>
+                <p class="message-text text-muted">Tony Wei</p>
               </div>
-            </div>
+            </li>
 
-            <div class="message pl-2">
+            <li class="message pl-2">
               <div class="message-row1  message-text d-flex align-items-baseline justify-content-between pb-1">
                 <p>Final Assignment</p>
                 <p>19 hrs ago</p>
               </div>
               <div class="message-row1 d-flex align-items-baseline justify-content-between">
                 <p class="lato-bold">Did I do it right?</p>
-                <p class="message-text">Christina Lin</p>
+                <p class="message-text text-muted">Christina Lin</p>
               </div>
-            </div>
+            </li>
 
-          </div>
+          </ul>
 
-          <div class="col-8">
-            <div class="message message-selected">
+          <div class="message-detail col-8 d-flex flex-column">
+            <div class="message message-selected p-3">
               <div class="d-flex align-items-center justify-content-between">
                 <div>
                   <p class="message-text pb-1">Chapter Assignment 2 / HTML&CSS</p>
@@ -171,24 +163,90 @@
                 </span>
               </div>
             </div>
+
+            <div class="message-detail d-flex pt-3 pl-3 pr-4 border">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg" alt=""
+                class="icon rounded-circle mr-2">
+              <div class="message-block d-flex flex-column border-bottom pb-3">
+                <p class="lato-bold">Emily Wang</p>
+                <p class="lato-regular message-text text-muted">10:38 AM (4 hours ago)</p>
+                <p class="lato-regular message-content mt-3">Hi Teacher, the attached file is my homework of chapter 2.
+                  And here comes a question: Why in the following code the height of the <span
+                    class="message-hightlight ml-1">div</span> is bigger than
+                  the height
+                  of the <span class="message-hightlight ml-1">img</span>? There is a gap below the image, but it
+                  doesn’t
+                  seems to be a padding/margin. <br>What is
+                  the
+                  gap or extra space below image?</p>
+
+                <a href="#" class="message-attachment d-flex align-self-start p-2 mt-3">
+                  <span class="material-icons">
+                    attach_file
+                  </span>
+                  <p class="lato-bold">HW-2-David.zip</p>
+                  <div class="div"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="message-body d-flex flex-column border">
+              <ul class="d-flex message-selected p-3 border-bottom" style="list-style-type:none;">
+                <li class="mr-4">
+                  <select class="selection lato-bold align-baseline" id="exampleFormControlSelect1">
+                    <option selected>Body Text</option>
+                    <option>Aria</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_bold
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_italic
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_list_bulleted
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    format_list_numbered
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    insert_photo
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    insert_link
+                  </span>
+                </li>
+                <li class="mr-4">
+                  <span class="material-icons">
+                    code
+                  </span>
+                </li>
+              </ul>
+
+              <p class="p-3 lato-regular flex-grow-1 text-muted">Reply an answer…</p>
+              <div class="align-self-end mr-4 mb-4">
+                <a href="#" class="btn btn-outline-primary">Cancel</a>
+                <a href="#" class="btn btn-primary">Reply</a>
+              </div>
+            </div>
           </div>
 
-          <div class="message-detail">
-            <div class="col-1">
-              <span class="material-icons ml-3">
-                more_vert
-              </span>
-            </div>
-            <div class="col-7">
-              <p>Emily Wang</p>
-              <p>10:38 AM (4 hours ago)</p>
-              <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
-                following code the
-                height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t
-                seems to be a
-                padding/margin. What is the gap or extra space below image?</p>
-            </div>
-          </div>
+
 
         </div>
 

@@ -4,6 +4,7 @@ $primary:       #2A8356 !default;
 $secondary:     #CDDDCD !default;
 $border-radius:               .125rem !default; // 2px
 $paragraph-margin-bottom: 0;
+$text-muted:                  #00000062 !default;
 
 @import "bootstrap/bootstrap";
 
@@ -109,11 +110,11 @@ $paragraph-margin-bottom: 0;
   }
 } 
 
-.select-course {
+.selection {
   border: 0;
-  // background: white;
-  // padding: 0;
+  background-color: transparent;
 }
+
 .message {
   padding: .75rem;
   border: 1px solid #CDDDCD;
@@ -122,11 +123,39 @@ $paragraph-margin-bottom: 0;
 
 .message-selected {
   background-color: #EDF4EE;
-  border: 1px solid #CDDDCD;
+  //border: 1px solid #CDDDCD;
 }
 
 .message-text {
   font-size: 0.75em;
+}
+
+.message-content {
+  font-size: 0.875em;
+}
+
+.message-hightlight {
+  color: #2A8356;
+  // color:red;
+}
+
+.message-detail {
+  .icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    // background: transparent url('https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg') no-repeat center;
+    // object-fit: cover
+  }
+}
+
+.message-attachment {
+  background-color: #EDF4EE;
+  color: black;
+}
+
+.message-body {
+  height: 319px;
 }
 
 .col-3, .col-9, .col-4, .col-8 {
